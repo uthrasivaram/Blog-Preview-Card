@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  
+  <style>
+    @media (max-width: 1440px) { 
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      main{
+      background-color:hsl(47, 88%, 63%); 
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+
+    .blog-prev-card{ 
+      font-family: "Figtree", sans-serif;
+      background-color: hsl(0, 0%, 100%);
+      box-sizing: border-box;
+      border: 2px solid  hsl(0, 0%, 7%);
+      border-radius: 10px;
+      width: 90%;
+      max-width: 300px;
+      padding: 15px;
+      cursor: pointer;
+    }
+    .blog-prev-card:active{  
+       box-shadow: 10px 10px; 
+    }
+
+    .blog-prev-card .ill-img{
+      border-radius: 10px; 
+      width: 100%;
+      height: auto;
+    }
+
+    .blog-prev-card h3{    
+      color: hsl(47, 88%, 63%);
+      font-weight: 800;
+    }
+
+    .blog-prev-card p{   
+      color: hsl(0, 0%, 50%);  
+      font-size: 14px; 
+      line-height: 20px;
+      margin: 10px 0px 10px;
+    }
+    .blog-prev-card .dark-clr{  
+      color: hsl(0, 0%, 7%);  
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    button{
+      border: 0px;
+      border-radius: 2px;
+      background-color:  hsl(47, 88%, 63%);
+      font-weight: 500;
+      margin-top: 16px;
+      padding: 3px 7px 3px;
+    }
+
+    div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px; 
+      font-weight: 500;
+    } 
+    footer{
+      background-color:hsl(47, 88%, 63%); 
+      color: hsl(0, 0%, 7%);
+      text-align: center;  
+      font-weight: 500;
+    }
+    a{
+      text-decoration: none;
+      color:  hsl(0, 0%, 7%);
+      font-weight: 500;
+    }
+    }
+    @media (max-width: 375px) { 
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      main{
+      background-color:hsl(47, 88%, 63%); 
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+
+    .blog-prev-card{ 
+      font-family: "Figtree", sans-serif;
+      background-color: hsl(0, 0%, 100%);
+      box-sizing: border-box;
+      border: 2px solid  hsl(0, 0%, 7%);
+      border-radius: 10px;
+      width: 90%;
+      max-width: 300px;
+      padding: 15px;
+      cursor: pointer;
+    }
+    .blog-prev-card:active{  
+       box-shadow: 10px 10px; 
+    }
+
+    .blog-prev-card .ill-img{
+      border-radius: 10px; 
+      width: 100%;
+      height: auto;
+    }
+
+    .blog-prev-card h3{    
+      color: hsl(47, 88%, 63%);
+      font-weight: 800;
+    }
+
+    .blog-prev-card p{   
+      color: hsl(0, 0%, 50%);  
+      font-size: 14px; 
+      line-height: 20px;
+      margin: 10px 0px 10px;
+    }
+    .blog-prev-card .dark-clr{  
+      color: hsl(0, 0%, 7%);  
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    button{
+      border: 0px;
+      border-radius: 2px;
+      background-color:  hsl(47, 88%, 63%);
+      font-weight: 500;
+      margin-top: 16px;
+      padding: 3px 7px 3px;
+    }
+
+    div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px; 
+      font-weight: 500;
+    } 
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="blog-prev-card">
+      <img src="assets/images/illustration-article.svg" class="ill-img" alt="Illustration Image" width="300" height="210">
+      <button class="btn-style">Learning</button> 
+      <p class="dark-clr">Published 21 Dec 2023</p>
+      <h3>HTML & CSS foundations</h3>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div><img src="assets/images/image-avatar.webp" alt="Person Image" width="30px" height="25px"><h5>Greg Hooper</h5></div>
+    </article>
+  </main>
+    
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">UTHRA G</a>.
+  </footer>  
+</body>
+</html>
